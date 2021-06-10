@@ -1,0 +1,35 @@
+<div class="login">
+ 
+<!--First section-->
+<div style="background-image:.1jpeg;
+background-size: cover; height:680px; padding-top: 80px; text-align: center;">
+
+<body background="1.jpeg;"></body>
+<img src="1.jpeg">
+  
+  <h1 style="font-size:100px; color:black; margin:10px; text-align: center;">Loan Prediction</h1>
+  
+<div class="login">
+ 
+  
+<form action="{{url_for('predict')}}"method="post">
+ <input type="text" name="Gender" placeholder="Gender" required="required"/>
+  <input type="text" name="Married" placeholder="Married" required="required"/>
+   <input type="text" name="Dependents" placeholder="Dependents" required="required"/>
+    <input type="text" name="Education" placeholder="Education" required="required"/>
+ <input type="text" name="Self_Employed" placeholder="Self_Employed" required="required"/>
+      <input type="text" name="Property Area" placeholder="Property_Area" required="required"/>
+<button type="submit" class="btn">Predict</button>
+</form>
+
+<br>
+<br>
+{{ Prediction_text }}
+
+</div>
+
+
+
+
+
+
